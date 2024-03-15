@@ -35,21 +35,21 @@ function toggleTab(e) {
 	}
 }
 
-function toggleSlide() {
-	for (let i = 0; i < catalogItemsLink.length; i++) {
-		catalogItemsLink[i].addEventListener('click', (event) => {
-			event.preventDefault();
-			if (catalogItemsLink[i].classList.contains('catalog-item__content_active')) {
-				catalogItemsLink[i].classList.remove('catalog-item__content_active');
-			} else {
+// function toggleSlide() {
+// 	for (let i = 0; i < catalogItemsLink.length; i++) {
+// 		catalogItemsLink[i].addEventListener('click', (event) => {
+// 			event.preventDefault();
+// 			if (catalogItemsLink[i].classList.contains('catalog-item__content_active')) {
+// 				catalogItemsLink[i].classList.remove('catalog-item__content_active');
+// 			} else {
 
-			}
-			catalogItemsLink[i]
-			console.log(catalogItemsLink[i])
-		})
-	}
-}
-toggleSlide()
+// 			}
+// 			catalogItemsLink[i]
+// 			console.log(catalogItemsLink[i])
+// 		})
+// 	}
+// }
+// toggleSlide()
 
 
 // function toggleSlide(item) {
