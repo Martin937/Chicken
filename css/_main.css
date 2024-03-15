@@ -1,0 +1,51 @@
+body {
+  /* background: url(../img/1679376555_3-53.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 80vw;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.main {
+  min-height: 80vh;
+  background: url(../img/background_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 13.5vh;
+}
+
+.choise {
+  position: absolute;
+  bottom: 0vh;
+  left: 2vw;
+  right: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.choise__el {
+  width: 15vw;
+  height: 25vh;
+  border-radius: 50px;
+}
+.choise__el img {
+  width: 15vw;
+  height: 25vh;
+  border-radius: 50px;
+}
+.chickens {
+  background-image: url(../img/Chickens_1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.duckings {
+  background-image: url(../img/Duckings_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
