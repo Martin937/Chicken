@@ -1,34 +1,87 @@
-.header {
+/* Header styles */
+header {
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  background-color: #fff;
+  position: relative;
 }
-.header__logo {
+
+.logo {
   display: flex;
   align-items: center;
 }
-.header__img {
-  height: 50px;
-  margin-right: 1rem;
+
+.logo img {
+  max-width: 50px;
+  border-radius: 50%;
 }
-.header__list {
-  display: flex;
-  list-style: none;
-}
-.header__item {
-  margin-right: 1rem;
-}
-.header__link {
-  text-decoration: none;
-  color: #333;
+
+/* стили для названия компании */
+.company-name {
+  font-size: 20px;
   font-weight: bold;
-  transition: all 0.3s ease-in-out;
+  margin-left: 10px;
 }
-.header__link:hover {
-  color: #ff0000;
+
+/* Стили для меню */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: all 0.5s ease-in-out;
 }
-.active {
-  color: #ff0000;
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  padding: 10px;
+  transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+nav ul li a:hover {
+  color: #ff0000; /* Изменение цвета при наведении */
+}
+
+/* Гамбургер-меню */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Стили для переключения в крестик */
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+/* Добавляем стиль, чтобы скрыть средний бар */
+.hamburger-menu.active .bar:nth-child(2) {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+}
+.show {
+  top: 20px;
+  right: 50px;
 }

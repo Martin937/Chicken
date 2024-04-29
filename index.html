@@ -1,463 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>chickens</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header container">
-    <div class="header__logo">
-      <img class="header__img" src="./img/logo.jpg" alt="Company Logo">
-      <h1 class="header__title">Название компании</h1>
+  <header class="container">
+    <div class="logo">
+      <img src="./assets/img/logo.jpg" alt="Херсонская курочка Logo">
+      <span class="company-name">Херсонская курочка</span>
     </div>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item"><a class="header__link" href="#">Каталог</a></li>
-        <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+    <nav>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="main">
-    <div class="container">
-      <div class="choise">
-        <div class="choise__el chickens"></div>
-        <div class="choise__el ">
-          <img src="./img/Duckings_2.jpg" alt="">
+  <main>
+    <div class="main-container container">
+
+      <div class="main-content">
+        <h1>Натуральные продукты от наших кур</h1>
+        <p class="slogan">Вкусно, полезно и натурально</p>
+        <a class="offer">Покупайте качественные продукты от нашей птицефермы прямо сейчас!</a>
+      </div>
+
+      <div class="animal-images">
+        <div class="animal-images-wrapper">
+          <img src="./assets/img/Chickens_1.webp" alt="Изображение курицы" class="parallax">
+          <img src="./assets/img/Duckings_1.jpg" alt="Изображение утки" class="parallax">
+          <img src="./assets/img/Duckings_2.jpg" alt="Изображение гуся" class="parallax">
         </div>
-        <div class="choise__el duckings"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <section class="slider">
+    <div class="container">
+
+      <div class="splide" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">Наши фотомодели</h2>
+
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img src="./assets/img/1679376555_3-53.jpg" alt=""></li>
+            <li class="splide__slide"><img src="./assets/img/bacground_1.jpg" alt=""></li>
+            <li class="splide__slide"><img src="./assets/img/background_2.jpg" alt=""></li>
+            <li class="splide__slide"><img src="./assets/img/1679376555_3-53.jpg" alt=""></li>
+            <li class="splide__slide"><img src="./assets/img/bacground_1.jpg" alt=""></li>
+            <li class="splide__slide"><img src="./assets/img/background_2.jpg" alt=""></li>
+
+          </ul>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <section class="carousel">
-    <div class="carousel__wrapper">
-      <div class="carousel__inner">
-        <div class="card">
-          <img src="./img/Rooster.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Duckings_1.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Rooster.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Rooster.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Duckings_2.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Rooster.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Rooster.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Duckings_1.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Rooster.jpg">
-          <div class="content">
-            <h2>Наименование</h2>
-            <h3>Категория</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="map">
-      <button class="active first"></button>
-      <button class="second"></button>
-      <button class="third"></button>
+  <section class="catalog">
+    <div class="container">
+
     </div>
   </section>
 
-  <section id="catalog" class="catalog">
-    <div class="container">
-      <h2 class="title">Каталог пород</h2>
 
-      <ul class="catalog__tabs">
-        <li class="catalog__tab catalog__tab_active" data-type="chickens">Куры</li>
-        <li class="catalog__tab" data-type="ducks">Утки</li>
-        <li class="catalog__tab" data-type="geeses">Гуси</li>
-      </ul>
 
-      <div class="catalog__content catalog__content_active" data-type="chickens">
+  <!-- <section class="popap">
+    <a href="#modal" class="link">Show modal</a>
 
-        <div class="catalog-item animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Rooster.jpg" alt="pulsometr"
-                class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div><a href="#"
-                class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">6 990 руб.</div>
-              <div class="catalog-item__price">6 641 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
+    <div class="modal" id="modal">
+      <div class="overlay">
+        <div class="content">
+          <h3>Title</h3>
+          <p>Description</p>
+          <a href="#" class="close">✖</a>
         </div>
-
-        <div class="catalog-item animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Rooster.jpg" alt="pulsometr"
-                class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div><a href="#"
-                class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">6 990 руб.</div>
-              <div class="catalog-item__price">6 641 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Rooster.jpg" alt="pulsometr"
-                class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div><a href="#"
-                class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">6 990 руб.</div>
-              <div class="catalog-item__price">6 641 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Rooster.jpg" alt="pulsometr"
-                class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div><a href="#"
-                class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">6 990 руб.</div>
-              <div class="catalog-item__price">6 641 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Rooster.jpg" alt="pulsometr"
-                class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div><a href="#"
-                class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">6 990 руб.</div>
-              <div class="catalog-item__price">6 641 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Rooster.jpg" alt="pulsometr"
-                class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div><a href="#"
-                class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">6 990 руб.</div>
-              <div class="catalog-item__price">6 641 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Rooster.jpg" alt="pulsometr"
-                class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div>
-              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">6 990 руб.</div>
-              <div class="catalog-item__price">6 641 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="catalog__content " data-type="ducks">
-        <div class="catalog-item animate__animated animate__fadeInLeft">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Duckings_1.jpg"
-                alt="pulsometr" class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div>
-              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">4 750 руб.</div>
-              <div class="catalog-item__price">4 500 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Duckings_1.jpg"
-                alt="pulsometr" class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div>
-              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">4 750 руб.</div>
-              <div class="catalog-item__price">4 500 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Duckings_1.jpg"
-                alt="pulsometr" class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div>
-              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">4 750 руб.</div>
-              <div class="catalog-item__price">4 500 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="catalog__content" data-type="geeses">
-
-        <div class="catalog-item animate__animated animate__fadeInLeft">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Duckings_2.jpg"
-                alt="pulsometr" class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div>
-              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">4 750 руб.</div>
-              <div class="catalog-item__price">4 500 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Duckings_2.jpg"
-                alt="pulsometr" class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div>
-              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">4 750 руб.</div>
-              <div class="catalog-item__price">4 500 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-        <div class="catalog-item animate__animated animate__fadeInLeft">
-          <div class="catalog-item__wrapper">
-            <div class="catalog-item__content catalog-item__content_active"><img src="./img/Duckings_2.jpg"
-                alt="pulsometr" class="catalog-item__img">
-              <div class="catalog-item__subtitle">Порода</div>
-              <div class="catalog-item__descr">Преимущества породы</div>
-              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-            </div>
-            <div class="catalog-item__list">
-              <ul>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание;</li>
-                <li>Какое-то описание.</li>
-              </ul><a href="#" class="catalog-item__back">назад</a>
-            </div>
-          </div>
-          <hr>
-          <div class="catalog-item__footer">
-            <div class="catalog-item__prices">
-              <div class="catalog-item__old-price">4 750 руб.</div>
-              <div class="catalog-item__price">4 500 руб.</div>
-            </div><button class="button button_mini">КУПИТЬ</button>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -480,9 +114,11 @@
         </div>
       </div>
     </div>
-  </footer>
-  <!-- <script src="./js/wow.min.js"></script> -->
-  <!-- <script src="./js/carousel.js"></script> -->
+  </footer> -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
   <script type="module" src="./js/script.js"></script>
 
 </body>
