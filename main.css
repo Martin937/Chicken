@@ -218,7 +218,7 @@ body {
 }
 /* Main styles */
 main {
-  background-image: url(../assets/img/background_2.jpg);
+  background-image: url(./assets/img/background_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

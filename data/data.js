@@ -5,7 +5,8 @@ const data = [
 		products: [
 			{
 				breed: "Курочка брама",
-				image: "../assets/img/Rooster.jpg",
+				image: "./assets/img/Rooster.jpg",
+				// image: "../assets/img/Rooster.jpg",
 				advantages: "Высокая яйценоскость, хороший аппетит",
 				oldPrice: 140.99,
 				discount: 0.9,
@@ -19,7 +20,8 @@ const data = [
 			},
 			{
 				breed: "Курочка род айленд ред",
-				image: "../assets/img/Rooster.jpg",
+				image: "./assets/img/Rooster.jpg",
+				// image: "../assets/img/Rooster.jpg",
 				advantages: "Высокая яйценоскость, спокойный характер",
 				discount: 0.9,
 				currentPrice: 0,
@@ -41,7 +43,8 @@ const data = [
 		products: [
 			{
 				breed: "Утка мулард",
-				image: "../assets/img/Duckings_1.jpg",
+				image: "./assets/img/Duckings_1.jpg",
+				// image: "../assets/img/Duckings_1.jpg",
 				advantages: "Отличное мясо, быстрый рост",
 				discount: 0.9,
 				currentPrice: 0,
@@ -55,7 +58,8 @@ const data = [
 			},
 			{
 				breed: "Утка пекинская",
-				image: "../assets/img/Duckings_1.jpg",
+				image: "./assets/img/Duckings_1.jpg",
+				// image: "../assets/img/Duckings_1.jpg",
 				advantages: "Отличные яйца, красивый внешний вид",
 				discount: 0.9,
 				currentPrice: 0,
@@ -77,7 +81,8 @@ const data = [
 		products: [
 			{
 				breed: "Гусь толстый",
-				image: "../assets/img/Chickens_1.webp",
+				image: "./assets/img/Chickens_1.webp",
+				// image: "../assets/img/Chickens_1.webp",
 				advantages: "Качественное мясо, высокая выносливость",
 				discount: 0.9,
 				currentPrice: 0,
@@ -91,7 +96,8 @@ const data = [
 			},
 			{
 				breed: "Гусь геркулес",
-				image: "../assets/img/Chicken.jpg",
+				image: "./assets/img/Chicken.jpg",
+				// image: "../assets/img/Chicken.jpg",
 				advantages: "Качественное мясо, высокая яйценоскость",
 				discount: 0.9,
 				currentPrice: 0,
