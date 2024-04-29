@@ -1,8 +1,8 @@
-@import './_reset.css';
-@import './_header.css';
-@import './_main.css';
-@import './_slider.css';
-@import './_catalog.css';
+@import './reset.css';
+@import './header.css';
+@import './main.css';
+@import './slider.css';
+@import './catalog.css';
 /* @import './_footer.css';  */
 
 /* Container styles */
