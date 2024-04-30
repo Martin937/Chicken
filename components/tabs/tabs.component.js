@@ -25,8 +25,12 @@ export const renderTabsContainer = () => {
 const renderTabElement = (props) => {
 	const tab = createCustomElement('div', {
 		classes: ['catalog-tab'],
+	});
+	const tabDiv = createCustomElement('div', {
 		content: props.title
 	});
+	tab.append(tabDiv);
+
 	return tab;
 }
 

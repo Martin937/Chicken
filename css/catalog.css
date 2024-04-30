@@ -1,5 +1,7 @@
 :root {
-  --bgCatalog: #000000;
+  /* --bgCatalog: #00bbff; */
+  --greenColor: #50c878;
+  --greyColor: #e9e9e9;
 }
 
 .catalog {
@@ -20,28 +22,29 @@
 .catalog-tab {
   width: 220px;
   height: 50px;
-  border: 2px solid #d0d0d0;
+  border: 2px solid var(--greenColor);
+  /* border: 2px solid #d0d0d0; */
   color: #6b6b6b;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   line-height: 48px;
-  /* transform: skewX(-25deg); */
+  transform: skewX(-25deg);
   margin: 0 5px;
   cursor: pointer;
   transition: 0.5s all;
 }
 .catalog-tab:hover {
-  box-shadow: 3px 3px 20px #00bbff;
+  box-shadow: 3px 3px 20px var(--greenColor);
   border: none;
 }
 .catalog-tab div {
-  /* transform: skewX(25deg); */
+  transform: skewX(25deg);
 }
 .catalog-tab-active {
   color: #fff;
-  background-color: #00bbff;
+  background-color: var(--greenColor);
   border: none;
 }
 .catalog-cards {
@@ -56,8 +59,8 @@
 .catalog-card {
   width: 300px;
   min-height: 440px;
+  border: 2px solid var(--greenColor);
   /* border: 2px solid #e8e8e8; */
-  border: 2px solid #00ff33;
   padding: 20px 20px 26px 20px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -97,7 +100,7 @@
   color: #ff0000;
 }
 .catalog-card hr {
-  background-color: #e8e8e8;
+  border: 1px solid var(--greenColor);
   margin-top: 19px;
   margin-bottom: 21px;
   border-bottom: none;
