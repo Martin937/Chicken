@@ -1,5 +1,6 @@
 @import './reset.css';
-@import './header.css';
+/* @import './header.css'; */
+@import  url('/css/header.css');
 @import './main.css';
 @import './slider.css';
 @import './catalog.css';
