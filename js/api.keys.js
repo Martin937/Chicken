@@ -1,0 +1,1 @@
+const apiMapsYandexKey = '16cc9c8a - bce6 - 471d - bff5 - 308892106a3a'

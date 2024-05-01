@@ -37,6 +37,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Добавляем контейнер для табов внутрь основного контейнера
 	catalogContainer.append(renderTabsContainer());
 	catalogContainer.append(renderCardsContainer());
+
+	// yandex maps
+	ymaps.ready(init);
+
+	function init() {
+		var myMap = new ymaps.Map("map", {
+			center: [47.158472, 33.931533], // Координаты Херсонской области, пгт. Великая Лепетиха
+			zoom: 10 // Масштаб карты
+		});
+
+		var myPlacemark = new ymaps.Placemark([47.158472, 33.931533], {
+			hintContent: 'Пгт. Великая Лепетиха'
+		});
+
+		myMap.geoObjects.add(myPlacemark);
+	}
+
 });
 
 
