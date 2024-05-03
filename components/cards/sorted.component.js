@@ -3,19 +3,22 @@ import { createCustomElement } from "../../js/functions.module.js"
 
 
 export const renderSortedElement = () => {
+
+	const sortedWrapperElement = createCustomElement('div',
+		{ classes: ['sorted-wrapper'] })
+
+	const sortedTitleElement = createCustomElement('h3',
+		{ content: 'Фильтр' })
+
 	const sortedElementOptions = [
-		{
-			value: 'price',
-			title: 'По цене'
-		},
 		{
 			value: 'name',
 			title: 'По названию'
 		},
 		{
-			value: 'date',
-			title: 'По дате'
-		}
+			value: 'price',
+			title: 'По цене'
+		},
 	]
 
 	const sortedElement = createCustomElement('select', {
@@ -30,11 +33,9 @@ export const renderSortedElement = () => {
 		sortedElement.append(optionElement)
 	}
 
-	return sortedElement
+	sortedWrapperElement.append(sortedTitleElement)
+	sortedWrapperElement.append(sortedElement)
+
+	return sortedWrapperElement
 }
 
-{/* <select id="sort-select">
-	<option value="price">По цене</option>
-	<option value="name">По названию</option>
-	<option value="date">По дате</option>
-</select> */}

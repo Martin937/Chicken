@@ -48,7 +48,7 @@
   border: none;
 }
 .catalog-cards {
-  margin-top: 60px;
+  margin-top: 30px;
   display: none;
 }
 .catalog-cards-active {
@@ -179,4 +179,12 @@
   font-weight: 500;
   text-decoration: underline;
   text-transform: uppercase;
+}
+
+.sorted-wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+.sorted-wrapper h3 {
+  margin-right: 10px;
 }

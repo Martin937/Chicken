@@ -1,13 +1,7 @@
 :root {
-  --bg-color: #e9e9e9;
   --width-animal-images: 150px;
 }
 
-body {
-  background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
 /* Main styles */
 main {
   background-image: url(../assets/img/background_2.jpg);

@@ -54,6 +54,31 @@ document.addEventListener('DOMContentLoaded', function () {
 		myMap.geoObjects.add(myPlacemark);
 	}
 
+	// модальное окно
+	const openModalButtons = document.querySelectorAll('.card-button');
+	const modal = document.getElementById('modal');
+	const closeModalButton = document.querySelector('.close-modal');
+
+	// Открытие модального окна при клике на любую кнопку "Купить"
+	openModalButtons.forEach(function (button) {
+		button.addEventListener('click', function () {
+			modal.style.display = 'block';
+		});
+	});
+
+	// Закрытие модального окна при клике на кнопку "Закрыть"
+	closeModalButton.addEventListener('click', function () {
+		modal.style.display = 'none';
+	});
+
+	// Закрытие модального окна при клике вне его области
+	window.addEventListener('click', function (event) {
+		if (event.target === modal) {
+			modal.style.display = 'none';
+		}
+	});
+
+
 });
 
 
