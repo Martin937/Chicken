@@ -7,9 +7,9 @@ main {
   background-image: url(../assets/img/background_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 50px;
 }
 .main-container {
-  position: relative; /* Чтобы контент не налазил на header */
   height: calc(100vh - 140px); /* Учитываем высоту header */
 }
 
@@ -41,21 +41,16 @@ h1 {
   color: #333;
 }
 
-/* Дополнительные стили для главного контейнера */
-.animal-images {
-  position: absolute;
-  bottom: calc(-1 * var(--width-animal-images) / 2);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-}
-.animal-images-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
+/* Медиа-запросы для адаптивного дизайна */
 
-.animal-images img {
-  width: var(--width-animal-images); /* ширина изображения*/
-  /* margin: 0 20px;*/ /* отступы между изображениями */
-  border-radius: 20px;
+@media only screen and (max-width: 768px) {
+  .main-content {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    text-align: center;
+    top: auto;
+    right: auto;
+    padding-top: 20px;
+  }
 }

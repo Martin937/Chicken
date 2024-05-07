@@ -8,3 +8,34 @@
   height: 100%;
   border-radius: 20px;
 }
+
+.slider .container {
+  padding-bottom: 50px;
+}
+.slider .animal-images {
+  bottom: calc(-1 * var(--width-animal-images) / 1.1);
+}
+
+@media only screen and (max-width: 1100px) {
+  .slider .animal-images {
+    bottom: calc(-1 * var(--width-animal-images));
+  }
+}
+@media only screen and (max-width: 900px) {
+  .slider .animal-images {
+    bottom: calc(-1 * var(--width-animal-images) * 1.1);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slider .animal-images {
+    bottom: calc(-1 * var(--width-animal-images) / 0.85);
+  }
+}
+@media only screen and (max-width: 414px) {
+  .slider {
+    padding: 10px 0;
+  }
+  .slider .animal-images {
+    bottom: calc(-1 * var(--width-animal-images) / 1.2);
+  }
+}

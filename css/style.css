@@ -13,84 +13,90 @@
 }
 
 body {
-  /* background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  background-size: 100% auto; */
 }
 
-/* Container styles */
 .container {
   width: 90vw;
   max-width: 1240px;
   margin: 0 auto;
+  position: relative;
 }
 section {
-  margin-top: 50px;
-  background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-header,
-footer {
-  background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  margin-top: 20px;
 }
 section,
 header,
-main,
 footer {
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   border-radius: 50px;
 }
 
 .section-title {
-  /* color: yellow; */
   text-align: right;
   font-size: 32px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+/* Дополнительные стили  */
+.animal-images {
+  position: absolute;
+  bottom: calc(-1 * var(--width-animal-images) / 1.9);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+}
+.animal-images-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animal-images img {
+  width: var(--width-animal-images);
+  border-radius: 20px;
 }
 
 /* Медиа-запросы для адаптивного дизайна */
-@media screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 1100px) {
+  :root {
+    --width-animal-images: 120px;
+  }
+  .animal-images {
+    bottom: calc(-1 * var(--width-animal-images) / 1.6);
+  }
+}
+@media only screen and (max-width: 900px) {
+  :root {
+    --width-animal-images: 100px;
+  }
+  .animal-images {
+    bottom: calc(-1 * var(--width-animal-images) / 1.7);
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .container {
     width: 95vw;
   }
-
-  .main-content {
-    position: static;
-    transform: none;
-    max-width: 100%;
-    text-align: center;
-    top: auto;
-    right: auto;
-    margin-top: 20px;
+  :root {
+    --width-animal-images: 80px;
   }
-
-  nav {
-    text-align: center;
+  .animal-images {
+    bottom: calc(-1 * var(--width-animal-images) / 1.8);
+  }
+  .animal-images-wrapper {
+    justify-content: space-around;
   }
 }
-@media screen and (max-width: 630px) {
-  nav ul {
-    position: absolute;
-    top: -500px;
-    right: 0;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    width: 100%;
-    border-radius: 50px;
-    transition: all 1s ease;
-    z-index: 100;
-  }
 
-  nav ul li {
-    display: block;
-    margin: 20px 0;
-    padding: 20px;
-  }
-
-  .hamburger-menu {
-    display: flex;
+@media only screen and (max-width: 414px) {
+  :root {
+    --width-animal-images: 60px;
   }
 }
